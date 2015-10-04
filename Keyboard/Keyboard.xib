@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardController" customModule="Keyboard">
+            <connections>
+                <outlet property="view" destination="BX1-zJ-uit" id="NJQ-9l-4An"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BX1-zJ-uit" userLabel="KeyboardView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6W-KT-Dfk" userLabel="rowTop" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                </view>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBL-Ho-8IF" userLabel="rowUpper" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="150" width="600" height="150"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                </view>
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIp-TO-lEK" userLabel="rowLower" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="300" width="600" height="150"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                </view>
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-tg-I9W" userLabel="rowBottom" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.180392161" green="0.78039217000000005" blue="0.72941178080000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="s6W-KT-Dfk" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="FlE-4c-phG"/>
+                <constraint firstItem="aBL-Ho-8IF" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="Nx1-YM-chl"/>
+                <constraint firstAttribute="bottom" secondItem="bb2-tg-I9W" secondAttribute="bottom" id="TDk-uX-GnO"/>
+                <constraint firstItem="UIp-TO-lEK" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="TMZ-O5-IFW"/>
+                <constraint firstItem="bb2-tg-I9W" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="V57-br-jiW"/>
+                <constraint firstItem="s6W-KT-Dfk" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="Wdi-7e-btO"/>
+                <constraint firstItem="bb2-tg-I9W" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="XQc-GS-NNt"/>
+                <constraint firstItem="bb2-tg-I9W" firstAttribute="top" secondItem="UIp-TO-lEK" secondAttribute="bottom" id="aul-Yd-txA"/>
+                <constraint firstAttribute="trailing" secondItem="UIp-TO-lEK" secondAttribute="trailing" id="eDD-OM-6aR"/>
+                <constraint firstAttribute="trailing" secondItem="aBL-Ho-8IF" secondAttribute="trailing" id="eel-90-e8p"/>
+                <constraint firstItem="UIp-TO-lEK" firstAttribute="top" secondItem="aBL-Ho-8IF" secondAttribute="bottom" id="gnK-5h-Q82"/>
+                <constraint firstItem="UIp-TO-lEK" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="m3T-0h-kBz"/>
+                <constraint firstAttribute="trailing" secondItem="bb2-tg-I9W" secondAttribute="trailing" id="ore-o4-im4"/>
+                <constraint firstItem="aBL-Ho-8IF" firstAttribute="top" secondItem="s6W-KT-Dfk" secondAttribute="bottom" id="qhj-iy-VfQ"/>
+                <constraint firstItem="s6W-KT-Dfk" firstAttribute="top" secondItem="BX1-zJ-uit" secondAttribute="top" id="u4h-co-PoE"/>
+                <constraint firstAttribute="trailing" secondItem="s6W-KT-Dfk" secondAttribute="trailing" id="w5d-He-uMd"/>
+                <constraint firstItem="aBL-Ho-8IF" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="yd8-hh-Mlg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

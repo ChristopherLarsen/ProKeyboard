@@ -12,8 +12,35 @@
 		5720EE5D1BC1ACE900E4F0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE5B1BC1ACE900E4F0CB /* Main.storyboard */; };
 		5720EE5F1BC1ACE900E4F0CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE5E1BC1ACE900E4F0CB /* Assets.xcassets */; };
 		5720EE621BC1ACE900E4F0CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE601BC1ACE900E4F0CB /* LaunchScreen.storyboard */; };
-		5720EE701BC1AD3D00E4F0CB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE6F1BC1AD3D00E4F0CB /* KeyboardViewController.swift */; };
 		5720EE741BC1AD3D00E4F0CB /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5720EE6D1BC1AD3D00E4F0CB /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5720EE831BC1AFEE00E4F0CB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7A1BC1AFEE00E4F0CB /* Config.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE841BC1AFEE00E4F0CB /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7B1BC1AFEE00E4F0CB /* Debug.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE851BC1AFEE00E4F0CB /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7C1BC1AFEE00E4F0CB /* Debugger.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE861BC1AFEE00E4F0CB /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7D1BC1AFEE00E4F0CB /* Dispatch.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE871BC1AFEE00E4F0CB /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7E1BC1AFEE00E4F0CB /* EasyCast.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE881BC1AFEE00E4F0CB /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7F1BC1AFEE00E4F0CB /* Load.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE891BC1AFEE00E4F0CB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE801BC1AFEE00E4F0CB /* String+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE8A1BC1AFEE00E4F0CB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE811BC1AFEE00E4F0CB /* UIColor+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE8B1BC1AFEE00E4F0CB /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE821BC1AFEE00E4F0CB /* ViewContainer.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE961BC1B00800E4F0CB /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE8C1BC1B00800E4F0CB /* Key.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE971BC1B00800E4F0CB /* Key.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE8D1BC1B00800E4F0CB /* Key.xib */; settings = {ASSET_TAGS = (); }; };
+		5720EE981BC1B00800E4F0CB /* KeyArt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE8E1BC1B00800E4F0CB /* KeyArt.xcassets */; settings = {ASSET_TAGS = (); }; };
+		5720EE991BC1B00800E4F0CB /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE8F1BC1B00800E4F0CB /* Keyboard.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE9A1BC1B00800E4F0CB /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE901BC1B00800E4F0CB /* Keyboard.xib */; settings = {ASSET_TAGS = (); }; };
+		5720EE9B1BC1B00800E4F0CB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE911BC1B00800E4F0CB /* KeyboardViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE9C1BC1B00800E4F0CB /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE921BC1B00800E4F0CB /* KeyboardViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		5720EE9D1BC1B00800E4F0CB /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE931BC1B00800E4F0CB /* Row.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EE9E1BC1B00800E4F0CB /* Row.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE941BC1B00800E4F0CB /* Row.xib */; settings = {ASSET_TAGS = (); }; };
+		5720EE9F1BC1B00800E4F0CB /* RowBottom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE951BC1B00800E4F0CB /* RowBottom.xib */; settings = {ASSET_TAGS = (); }; };
+		5720EEA01BC1B02F00E4F0CB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7A1BC1AFEE00E4F0CB /* Config.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA11BC1B02F00E4F0CB /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7B1BC1AFEE00E4F0CB /* Debug.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA21BC1B02F00E4F0CB /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7C1BC1AFEE00E4F0CB /* Debugger.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA31BC1B02F00E4F0CB /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7D1BC1AFEE00E4F0CB /* Dispatch.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA41BC1B02F00E4F0CB /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7E1BC1AFEE00E4F0CB /* EasyCast.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA51BC1B02F00E4F0CB /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE7F1BC1AFEE00E4F0CB /* Load.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA61BC1B02F00E4F0CB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE801BC1AFEE00E4F0CB /* String+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA71BC1B02F00E4F0CB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE811BC1AFEE00E4F0CB /* UIColor+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		5720EEA81BC1B02F00E4F0CB /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE821BC1AFEE00E4F0CB /* ViewContainer.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +76,26 @@
 		5720EE611BC1ACE900E4F0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5720EE631BC1ACE900E4F0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5720EE6D1BC1AD3D00E4F0CB /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		5720EE6F1BC1AD3D00E4F0CB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5720EE711BC1AD3D00E4F0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5720EE7A1BC1AFEE00E4F0CB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		5720EE7B1BC1AFEE00E4F0CB /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		5720EE7C1BC1AFEE00E4F0CB /* Debugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
+		5720EE7D1BC1AFEE00E4F0CB /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		5720EE7E1BC1AFEE00E4F0CB /* EasyCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyCast.swift; sourceTree = "<group>"; };
+		5720EE7F1BC1AFEE00E4F0CB /* Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Load.swift; sourceTree = "<group>"; };
+		5720EE801BC1AFEE00E4F0CB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5720EE811BC1AFEE00E4F0CB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		5720EE821BC1AFEE00E4F0CB /* ViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
+		5720EE8C1BC1B00800E4F0CB /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		5720EE8D1BC1B00800E4F0CB /* Key.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Key.xib; sourceTree = "<group>"; };
+		5720EE8E1BC1B00800E4F0CB /* KeyArt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyArt.xcassets; sourceTree = "<group>"; };
+		5720EE8F1BC1B00800E4F0CB /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		5720EE901BC1B00800E4F0CB /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		5720EE911BC1B00800E4F0CB /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5720EE921BC1B00800E4F0CB /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		5720EE931BC1B00800E4F0CB /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		5720EE941BC1B00800E4F0CB /* Row.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Row.xib; sourceTree = "<group>"; };
+		5720EE951BC1B00800E4F0CB /* RowBottom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowBottom.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +119,7 @@
 		5720EE4B1BC1ACE900E4F0CB = {
 			isa = PBXGroup;
 			children = (
+				5720EE791BC1AFEE00E4F0CB /* Common */,
 				5720EE561BC1ACE900E4F0CB /* ProKeyboard */,
 				5720EE6E1BC1AD3D00E4F0CB /* Keyboard */,
 				5720EE551BC1ACE900E4F0CB /* Products */,
@@ -105,10 +151,67 @@
 		5720EE6E1BC1AD3D00E4F0CB /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				5720EE6F1BC1AD3D00E4F0CB /* KeyboardViewController.swift */,
+				5720EEA91BC1B04D00E4F0CB /* KeyboardViewController */,
+				5720EEAA1BC1B05D00E4F0CB /* Keyboard */,
+				5720EEAB1BC1B06A00E4F0CB /* Row */,
+				5720EEAC1BC1B07400E4F0CB /* Key */,
+				5720EE8E1BC1B00800E4F0CB /* KeyArt.xcassets */,
 				5720EE711BC1AD3D00E4F0CB /* Info.plist */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		5720EE791BC1AFEE00E4F0CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5720EE7A1BC1AFEE00E4F0CB /* Config.swift */,
+				5720EE7B1BC1AFEE00E4F0CB /* Debug.swift */,
+				5720EE7C1BC1AFEE00E4F0CB /* Debugger.swift */,
+				5720EE7D1BC1AFEE00E4F0CB /* Dispatch.swift */,
+				5720EE7E1BC1AFEE00E4F0CB /* EasyCast.swift */,
+				5720EE7F1BC1AFEE00E4F0CB /* Load.swift */,
+				5720EE801BC1AFEE00E4F0CB /* String+Extension.swift */,
+				5720EE811BC1AFEE00E4F0CB /* UIColor+Extensions.swift */,
+				5720EE821BC1AFEE00E4F0CB /* ViewContainer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5720EEA91BC1B04D00E4F0CB /* KeyboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5720EE911BC1B00800E4F0CB /* KeyboardViewController.swift */,
+				5720EE921BC1B00800E4F0CB /* KeyboardViewController.xib */,
+			);
+			name = KeyboardViewController;
+			sourceTree = "<group>";
+		};
+		5720EEAA1BC1B05D00E4F0CB /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5720EE8F1BC1B00800E4F0CB /* Keyboard.swift */,
+				5720EE901BC1B00800E4F0CB /* Keyboard.xib */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		5720EEAB1BC1B06A00E4F0CB /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				5720EE931BC1B00800E4F0CB /* Row.swift */,
+				5720EE941BC1B00800E4F0CB /* Row.xib */,
+				5720EE951BC1B00800E4F0CB /* RowBottom.xib */,
+			);
+			name = Row;
+			sourceTree = "<group>";
+		};
+		5720EEAC1BC1B07400E4F0CB /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				5720EE8C1BC1B00800E4F0CB /* Key.swift */,
+				5720EE8D1BC1B00800E4F0CB /* Key.xib */,
+			);
+			name = Key;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +259,7 @@
 		5720EE4C1BC1ACE900E4F0CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DRG;
 				TargetAttributes = {
@@ -201,6 +305,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5720EE9E1BC1B00800E4F0CB /* Row.xib in Resources */,
+				5720EE9A1BC1B00800E4F0CB /* Keyboard.xib in Resources */,
+				5720EE971BC1B00800E4F0CB /* Key.xib in Resources */,
+				5720EE981BC1B00800E4F0CB /* KeyArt.xcassets in Resources */,
+				5720EE9C1BC1B00800E4F0CB /* KeyboardViewController.xib in Resources */,
+				5720EE9F1BC1B00800E4F0CB /* RowBottom.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5720EE8B1BC1AFEE00E4F0CB /* ViewContainer.swift in Sources */,
 				5720EE5A1BC1ACE900E4F0CB /* ViewController.swift in Sources */,
+				5720EE8A1BC1AFEE00E4F0CB /* UIColor+Extensions.swift in Sources */,
+				5720EE891BC1AFEE00E4F0CB /* String+Extension.swift in Sources */,
+				5720EE841BC1AFEE00E4F0CB /* Debug.swift in Sources */,
 				5720EE581BC1ACE900E4F0CB /* AppDelegate.swift in Sources */,
+				5720EE861BC1AFEE00E4F0CB /* Dispatch.swift in Sources */,
+				5720EE851BC1AFEE00E4F0CB /* Debugger.swift in Sources */,
+				5720EE881BC1AFEE00E4F0CB /* Load.swift in Sources */,
+				5720EE831BC1AFEE00E4F0CB /* Config.swift in Sources */,
+				5720EE871BC1AFEE00E4F0CB /* EasyCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +339,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5720EE701BC1AD3D00E4F0CB /* KeyboardViewController.swift in Sources */,
+				5720EE9D1BC1B00800E4F0CB /* Row.swift in Sources */,
+				5720EEA61BC1B02F00E4F0CB /* String+Extension.swift in Sources */,
+				5720EEA51BC1B02F00E4F0CB /* Load.swift in Sources */,
+				5720EEA31BC1B02F00E4F0CB /* Dispatch.swift in Sources */,
+				5720EEA21BC1B02F00E4F0CB /* Debugger.swift in Sources */,
+				5720EEA41BC1B02F00E4F0CB /* EasyCast.swift in Sources */,
+				5720EEA11BC1B02F00E4F0CB /* Debug.swift in Sources */,
+				5720EEA71BC1B02F00E4F0CB /* UIColor+Extensions.swift in Sources */,
+				5720EE991BC1B00800E4F0CB /* Keyboard.swift in Sources */,
+				5720EEA01BC1B02F00E4F0CB /* Config.swift in Sources */,
+				5720EE9B1BC1B00800E4F0CB /* KeyboardViewController.swift in Sources */,
+				5720EE961BC1B00800E4F0CB /* Key.swift in Sources */,
+				5720EEA81BC1B02F00E4F0CB /* ViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,17 +493,20 @@
 		5720EE761BC1AD3D00E4F0CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deadratgames.ProKeyboard.Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5720EE771BC1AD3D00E4F0CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deadratgames.ProKeyboard.Keyboard;
