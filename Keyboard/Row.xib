@@ -63,7 +63,7 @@
                 </view>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.7114695311" green="0.0" blue="0.092037841679999996" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Gkz-I6-I1u" firstAttribute="top" secondItem="d6x-6u-j9j" secondAttribute="top" id="05P-In-UOy"/>
                 <constraint firstItem="qYn-6E-ifT" firstAttribute="width" secondItem="d6x-6u-j9j" secondAttribute="width" multiplier="0.1" id="4zS-SQ-47e"/>

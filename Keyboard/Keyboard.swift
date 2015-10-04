@@ -33,21 +33,10 @@ class Keyboard : UIView
         
         let array_QWERTYUIOP = [key_Q, key_W, key_E, key_R, key_T, key_Y, key_U, key_I, key_O,key_P ]
         
-        if let top = Load.objectWithClass(Row) as? Row {
+        let loadTop = Load.objectWithClass(Row)
+        if let top = loadTop as? Row {
             top.populateWithArrayOfKeys(array_QWERTYUIOP)
             self.rowTop.addSubview(top)
-        }
-
-        if let upper = Load.objectWithClass(Row) as? Row {
-            self.rowUpper.addSubview(upper)
-        }
-
-        if let lower = Load.objectWithClass(Row) as? Row {
-            self.rowLower.addSubview(lower)
-        }
-
-        if let bottom = Load.objectWithClass(Row) as? Row {
-            self.rowBottom.addSubview(bottom)
         }
         
     }

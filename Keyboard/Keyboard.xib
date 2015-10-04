@@ -54,6 +54,12 @@
                 <constraint firstItem="aBL-Ho-8IF" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="yd8-hh-Mlg"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="rowBottom" destination="bb2-tg-I9W" id="JxE-jh-6PI"/>
+                <outlet property="rowLower" destination="UIp-TO-lEK" id="esC-G6-jR3"/>
+                <outlet property="rowTop" destination="s6W-KT-Dfk" id="4b8-A5-PhZ"/>
+                <outlet property="rowUpper" destination="aBL-Ho-8IF" id="Gqm-H0-pOS"/>
+            </connections>
         </view>
     </objects>
 </document>

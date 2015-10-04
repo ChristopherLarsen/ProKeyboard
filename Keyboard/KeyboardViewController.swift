@@ -18,7 +18,9 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         self.loadKeyboard()
         self.addNextKeyboardKey()
     }
@@ -27,9 +29,21 @@ class KeyboardViewController: UIInputViewController {
         
         let load = Load.objectWithClass(Keyboard)
         if let keyboard = load as? Keyboard {
+            keyboard.translatesAutoresizingMaskIntoConstraints = false
             keyboard.frame = self.view.frame
             self.view.addSubview(keyboard)
-        }
+            
+            let nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: keyboard, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
+            let nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: keyboard, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
+            let nextKeyboardButtonTopConstraint = NSLayoutConstraint(item: keyboard, attribute: .Top, relatedBy: .Equal, toItem: self.view, attribute: .Top, multiplier: 1.0, constant: 0.0)
+            let nextKeyboardButtonRightConstraint = NSLayoutConstraint(item: keyboard, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1.0, constant: 0.0)
+            
+            self.view.addConstraints(
+                [nextKeyboardButtonLeftSideConstraint,
+                    nextKeyboardButtonBottomConstraint,
+                    nextKeyboardButtonTopConstraint,
+                    nextKeyboardButtonRightConstraint])
+            }
         
     }
     
@@ -63,7 +77,7 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.blackColor()
         }
-        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+//        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
     }
     
 }
