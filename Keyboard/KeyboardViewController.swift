@@ -18,8 +18,19 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
+        self.loadKeyboard()
         self.addNextKeyboardKey()
+    }
+    
+    func loadKeyboard() {
+        
+        let load = Load.objectWithClass(Keyboard)
+        if let keyboard = load as? Keyboard {
+            keyboard.frame = self.view.frame
+            self.view.addSubview(keyboard)
+        }
+        
     }
     
     func addNextKeyboardKey() {
