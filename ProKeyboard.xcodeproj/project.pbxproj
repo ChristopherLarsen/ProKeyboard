@@ -12,7 +12,33 @@
 		5720EE5D1BC1ACE900E4F0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE5B1BC1ACE900E4F0CB /* Main.storyboard */; };
 		5720EE5F1BC1ACE900E4F0CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE5E1BC1ACE900E4F0CB /* Assets.xcassets */; };
 		5720EE621BC1ACE900E4F0CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5720EE601BC1ACE900E4F0CB /* LaunchScreen.storyboard */; };
+		5720EE701BC1AD3D00E4F0CB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720EE6F1BC1AD3D00E4F0CB /* KeyboardViewController.swift */; };
+		5720EE741BC1AD3D00E4F0CB /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5720EE6D1BC1AD3D00E4F0CB /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5720EE721BC1AD3D00E4F0CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5720EE4C1BC1ACE900E4F0CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5720EE6C1BC1AD3D00E4F0CB;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5720EE781BC1AD3D00E4F0CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5720EE741BC1AD3D00E4F0CB /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5720EE541BC1ACE900E4F0CB /* ProKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +48,20 @@
 		5720EE5E1BC1ACE900E4F0CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5720EE611BC1ACE900E4F0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5720EE631BC1ACE900E4F0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5720EE6D1BC1AD3D00E4F0CB /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5720EE6F1BC1AD3D00E4F0CB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5720EE711BC1AD3D00E4F0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5720EE511BC1ACE900E4F0CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5720EE6A1BC1AD3D00E4F0CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				5720EE561BC1ACE900E4F0CB /* ProKeyboard */,
+				5720EE6E1BC1AD3D00E4F0CB /* Keyboard */,
 				5720EE551BC1ACE900E4F0CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5720EE541BC1ACE900E4F0CB /* ProKeyboard.app */,
+				5720EE6D1BC1AD3D00E4F0CB /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +102,15 @@
 			path = ProKeyboard;
 			sourceTree = "<group>";
 		};
+		5720EE6E1BC1AD3D00E4F0CB /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5720EE6F1BC1AD3D00E4F0CB /* KeyboardViewController.swift */,
+				5720EE711BC1AD3D00E4F0CB /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +121,34 @@
 				5720EE501BC1ACE900E4F0CB /* Sources */,
 				5720EE511BC1ACE900E4F0CB /* Frameworks */,
 				5720EE521BC1ACE900E4F0CB /* Resources */,
+				5720EE781BC1AD3D00E4F0CB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5720EE731BC1AD3D00E4F0CB /* PBXTargetDependency */,
 			);
 			name = ProKeyboard;
 			productName = ProKeyboard;
 			productReference = 5720EE541BC1ACE900E4F0CB /* ProKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5720EE6C1BC1AD3D00E4F0CB /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5720EE751BC1AD3D00E4F0CB /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				5720EE691BC1AD3D00E4F0CB /* Sources */,
+				5720EE6A1BC1AD3D00E4F0CB /* Frameworks */,
+				5720EE6B1BC1AD3D00E4F0CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 5720EE6D1BC1AD3D00E4F0CB /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +160,9 @@
 				ORGANIZATIONNAME = DRG;
 				TargetAttributes = {
 					5720EE531BC1ACE900E4F0CB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					5720EE6C1BC1AD3D00E4F0CB = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
@@ -112,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				5720EE531BC1ACE900E4F0CB /* ProKeyboard */,
+				5720EE6C1BC1AD3D00E4F0CB /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +197,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5720EE6B1BC1AD3D00E4F0CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,7 +216,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5720EE691BC1AD3D00E4F0CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5720EE701BC1AD3D00E4F0CB /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5720EE731BC1AD3D00E4F0CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5720EE6C1BC1AD3D00E4F0CB /* Keyboard */;
+			targetProxy = 5720EE721BC1AD3D00E4F0CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5720EE5B1BC1ACE900E4F0CB /* Main.storyboard */ = {
@@ -246,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ProKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deadratgames.ProKeyboard;
@@ -257,10 +351,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ProKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deadratgames.ProKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5720EE761BC1AD3D00E4F0CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadratgames.ProKeyboard.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5720EE771BC1AD3D00E4F0CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadratgames.ProKeyboard.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -281,6 +398,14 @@
 			buildConfigurations = (
 				5720EE671BC1ACE900E4F0CB /* Debug */,
 				5720EE681BC1ACE900E4F0CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5720EE751BC1AD3D00E4F0CB /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5720EE761BC1AD3D00E4F0CB /* Debug */,
+				5720EE771BC1AD3D00E4F0CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
