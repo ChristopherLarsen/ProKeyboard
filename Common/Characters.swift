@@ -52,7 +52,7 @@ public class Characters
     }
     
     public func rowLetters0 () -> [String] {
-        return ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"]
+        return ["Sh", "z", "x", "c", "v", "b", "n", "m", "Del"]
     }
     
     public func rowLetters1 () -> [String] {
@@ -60,27 +60,27 @@ public class Characters
     }
     
     public func rowLetters2 () -> [String] {
-        return ["z", "x", "c", "v", "b", "n", "m"]
+        return ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"]
     }
     
     public func rowNumbers0 () -> [String] {
-        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+        return ["#+=", " ", ".", ",", "?", "!", "'", "DEL"]
     }
     
     public func rowNumbers1 () -> [String] {
-        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+        return ["-", "/", ":", ";", "(", ")", "$", "&", "@", "\""]
     }
     
     public func rowNumbers2 () -> [String] {
         return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
     }
     
-    public func rowSymbols0 () -> [String] {
-        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    public func rowSymbols1 () -> [String] {
+        return ["_", "\\", "|", "~", "<", ">", "€", "£", "¥", "•"]
     }
     
-    public func rowSymbols1 () -> [String] {
-        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    public func rowSymbols2 () -> [String] {
+        return ["[", "]", "{", "}", "#", "%", "^", "*", "+", "="]
     }
     
 }

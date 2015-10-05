@@ -14,6 +14,36 @@ extension UIView
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
+    func constrainHeight(constant:CGFloat)
+    {
+        self.disableAutoresizing()
+        
+        let constraint = NSLayoutConstraint(item: self,
+            attribute: NSLayoutAttribute.Height,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: constant)
+        
+        self.addConstraint(constraint)
+    }
+    
+    func constrainWidth(constant:CGFloat)
+    {
+        self.disableAutoresizing()
+        
+        let constraint = NSLayoutConstraint(item: self,
+            attribute: NSLayoutAttribute.Width,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: constant)
+        
+        self.addConstraint(constraint)
+    }
+    
     func constrainChildView(childView:UIView, attribute: NSLayoutAttribute, constant:CGFloat)
     {
         childView.disableAutoresizing()

@@ -13,6 +13,5 @@ class ViewContainer : UIView
     override func awakeFromNib()
     {
         self.backgroundColor = UIColor.clearColor()
-        
     }
 }

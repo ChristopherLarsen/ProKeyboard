@@ -13,6 +13,12 @@ class Row : UIView
 {
     var arrayKeyContainers: [ViewContainer] = []
 
+    class func rowControls() -> Row {
+        let load = Load.objectWithClass(Row.self, xib: "RowControls", owner: nil)
+        let row = load as! Row
+        return row
+    }
+
     class func row9() -> Row {
         let load = Load.objectWithClass(Row.self, xib: "Row9", owner: nil)
         let row = load as! Row

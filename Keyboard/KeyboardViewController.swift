@@ -34,6 +34,7 @@ class KeyboardViewController: UIInputViewController {
             keyboard.frame = self.view.frame
             self.view.addSubview(keyboard)
             self.view.constrainChildViewTopLeftBottomRight(keyboard)
+            keyboard.constrainHeight(216)
             
             keyboard.loadRows()
             

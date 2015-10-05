@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="J88-G5-ONg" userLabel="RowBottom" customClass="Row" customModule="ProKeyboardExtension">
+        <view contentMode="scaleToFill" id="J88-G5-ONg" userLabel="RowControls" customClass="Row" customModule="Keyboard">
             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
