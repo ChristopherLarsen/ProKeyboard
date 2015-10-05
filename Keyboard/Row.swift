@@ -11,8 +11,30 @@ import UIKit
 
 class Row : UIView
 {
-    @IBOutlet var arrayKeyContainers : [ViewContainer]!
+    var arrayKeyContainers: [ViewContainer] = []
 
+    class func row9() -> Row {
+        let load = Load.objectWithClass(Row.self, xib: "Row9", owner: nil)
+        let row = load as! Row
+        return row
+    }
+
+    class func row10() -> Row {
+        let load = Load.objectWithClass(Row.self, xib: "Row10", owner: nil)
+        let row = load as! Row
+        return row
+    }
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        for subview in self.subviews {
+            if let viewContainer = subview as? ViewContainer {
+                self.arrayKeyContainers.append(viewContainer)
+            }
+        }
+    }
+    
     func populateWithArrayOfKeys(arrayOfKeys: Array<Key>)
     {
         for viewContainer in self.arrayKeyContainers

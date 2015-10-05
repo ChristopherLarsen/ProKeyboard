@@ -8,25 +8,45 @@
 
 import UIKit
 
-class Key: UIView
+public class Key: UIView
 {
-    var characterDefault: NSString?
-    var characterShifted: NSString?
+    @IBOutlet var labelKey: UILabel!
     
-    class func load(def: String, shifted: String) -> Key {
-        let key = Load.objectWithClass(Key) as! Key
-        key.withCharacters(def, shifted: shifted)
+    var characterDefault: String = ""
+    var characterShifted: String = ""
+    
+    class func keysForLetters(arrayCharacters: Array<String>) -> Array<Key> {
+        
+        var arrayKeys : Array<Key> = []
+        
+        for character in arrayCharacters {
+            
+            let loadKey = Load.objectWithClass(Key)
+            let key = loadKey as! Key
+            
+            key.populateCharacters(character, shifted: Characters.sharedInstance.shifted(character))
+            arrayKeys.append(key)
+            
+        }
+        
+        return arrayKeys
+    }
+    
+    class func load(character: String, shifted: String) -> Key {
+        let loadKey = Load.objectWithClass(Key)
+        let key = loadKey as! Key
+        key.populateCharacters(character, shifted: shifted)
         return key
     }
     
-    func withCharacters(character: String, shifted: String) -> Key {
-        self.characterDefault = character
-        self.characterShifted = shifted
-        return self
+    public func shift(shifted: Bool) {
+        labelKey.text = shifted ? characterShifted : characterDefault
     }
     
-    func shift(shifted: Bool) {
-        
+    func populateCharacters(character: String, shifted: String) {
+        self.characterDefault = character
+        self.characterShifted = shifted
+        self.labelKey.text = self.characterDefault
     }
     
 }

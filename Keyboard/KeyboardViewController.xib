@@ -16,6 +16,7 @@
             <animations/>
             <color key="backgroundColor" red="0.180392161" green="0.78039217000000005" blue="0.72941178080000002" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="336" y="206"/>
         </view>
     </objects>
 </document>

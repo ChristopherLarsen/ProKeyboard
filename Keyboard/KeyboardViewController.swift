@@ -28,23 +28,17 @@ class KeyboardViewController: UIInputViewController {
     func loadKeyboard() {
         
         let load = Load.objectWithClass(Keyboard)
+        
         if let keyboard = load as? Keyboard {
-            keyboard.translatesAutoresizingMaskIntoConstraints = false
+            
             keyboard.frame = self.view.frame
             self.view.addSubview(keyboard)
+            self.view.constrainChildViewTopLeftBottomRight(keyboard)
             
-            let nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: keyboard, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
-            let nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: keyboard, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-            let nextKeyboardButtonTopConstraint = NSLayoutConstraint(item: keyboard, attribute: .Top, relatedBy: .Equal, toItem: self.view, attribute: .Top, multiplier: 1.0, constant: 0.0)
-            let nextKeyboardButtonRightConstraint = NSLayoutConstraint(item: keyboard, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1.0, constant: 0.0)
+            keyboard.loadRows()
             
-            self.view.addConstraints(
-                [nextKeyboardButtonLeftSideConstraint,
-                    nextKeyboardButtonBottomConstraint,
-                    nextKeyboardButtonTopConstraint,
-                    nextKeyboardButtonRightConstraint])
-            }
-        
+        }
+                
     }
     
     func addNextKeyboardKey() {
@@ -77,7 +71,8 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.blackColor()
         }
-//        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+        
+        self.nextKeyboardButton?.setTitleColor(textColor, forState: .Normal)
     }
     
 }

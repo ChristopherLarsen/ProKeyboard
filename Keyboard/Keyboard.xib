@@ -7,59 +7,141 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="BX1-zJ-uit" customClass="Keyboard" customModule="Keyboard" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="ofg-aG-W1H" customClass="Keyboard" customModule="Keyboard" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6W-KT-Dfk" userLabel="rowTop" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BX1-zJ-uit">
+                    <rect key="frame" x="0.0" y="-900" width="600" height="1500"/>
+                    <subviews>
+                        <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6W-KT-Dfk" userLabel="row8" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBL-Ho-8IF" userLabel="row7" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIp-TO-lEK" userLabel="row6" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="300" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-tg-I9W" userLabel="row5" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8Y-Pk-iVV" userLabel="row4" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="600" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPv-fT-bml" userLabel="row3" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="750" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bq-Qq-Au8" userLabel="row2" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="900" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kj8-DP-JIk" userLabel="row1" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="1050" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDb-We-YOW" userLabel="row0" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="1200" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sX-UE-gQ8" userLabel="spacer">
+                            <rect key="frame" x="0.0" y="1350" width="600" height="150"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
                     <animations/>
-                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.76328916810000003" green="0.76328916810000003" blue="0.76328916810000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="EPv-fT-bml" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="1RD-4e-BZe"/>
+                        <constraint firstItem="kj8-DP-JIk" firstAttribute="top" secondItem="9bq-Qq-Au8" secondAttribute="bottom" id="4e6-cD-EV7"/>
+                        <constraint firstItem="UDb-We-YOW" firstAttribute="top" secondItem="kj8-DP-JIk" secondAttribute="bottom" id="6Bc-Cs-hvi"/>
+                        <constraint firstAttribute="trailing" secondItem="6sX-UE-gQ8" secondAttribute="trailing" id="8ZG-7R-BrO"/>
+                        <constraint firstItem="kj8-DP-JIk" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="8fe-Zb-zef"/>
+                        <constraint firstItem="9bq-Qq-Au8" firstAttribute="top" secondItem="EPv-fT-bml" secondAttribute="bottom" id="A7a-oM-m2s"/>
+                        <constraint firstAttribute="trailing" secondItem="u8Y-Pk-iVV" secondAttribute="trailing" id="F9f-GI-hFe"/>
+                        <constraint firstItem="s6W-KT-Dfk" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="FlE-4c-phG"/>
+                        <constraint firstItem="kj8-DP-JIk" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="H5X-JY-8uh"/>
+                        <constraint firstItem="EPv-fT-bml" firstAttribute="top" secondItem="u8Y-Pk-iVV" secondAttribute="bottom" id="HXa-Db-pyH"/>
+                        <constraint firstItem="6sX-UE-gQ8" firstAttribute="top" secondItem="UDb-We-YOW" secondAttribute="bottom" id="KAA-cg-yJP"/>
+                        <constraint firstItem="aBL-Ho-8IF" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="Nx1-YM-chl"/>
+                        <constraint firstItem="UDb-We-YOW" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="SF0-eW-XcC"/>
+                        <constraint firstAttribute="bottom" secondItem="6sX-UE-gQ8" secondAttribute="bottom" id="TCV-KU-HtW"/>
+                        <constraint firstItem="UIp-TO-lEK" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="TMZ-O5-IFW"/>
+                        <constraint firstAttribute="trailing" secondItem="UDb-We-YOW" secondAttribute="trailing" id="TeN-Pp-0UC"/>
+                        <constraint firstAttribute="trailing" secondItem="kj8-DP-JIk" secondAttribute="trailing" id="Uz3-8s-24s"/>
+                        <constraint firstItem="bb2-tg-I9W" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="V57-br-jiW"/>
+                        <constraint firstItem="6sX-UE-gQ8" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="WS0-eM-RaG"/>
+                        <constraint firstItem="s6W-KT-Dfk" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="Wdi-7e-btO"/>
+                        <constraint firstAttribute="trailing" secondItem="EPv-fT-bml" secondAttribute="trailing" id="XMJ-TU-Yqf"/>
+                        <constraint firstItem="bb2-tg-I9W" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="XQc-GS-NNt"/>
+                        <constraint firstItem="9bq-Qq-Au8" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="YzO-dQ-ZYf"/>
+                        <constraint firstItem="bb2-tg-I9W" firstAttribute="top" secondItem="UIp-TO-lEK" secondAttribute="bottom" id="aul-Yd-txA"/>
+                        <constraint firstItem="6sX-UE-gQ8" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="bY3-Ah-gHf"/>
+                        <constraint firstItem="u8Y-Pk-iVV" firstAttribute="top" secondItem="bb2-tg-I9W" secondAttribute="bottom" id="c1n-L1-8MP"/>
+                        <constraint firstAttribute="trailing" secondItem="UIp-TO-lEK" secondAttribute="trailing" id="eDD-OM-6aR"/>
+                        <constraint firstAttribute="trailing" secondItem="aBL-Ho-8IF" secondAttribute="trailing" id="eel-90-e8p"/>
+                        <constraint firstItem="UIp-TO-lEK" firstAttribute="top" secondItem="aBL-Ho-8IF" secondAttribute="bottom" id="gnK-5h-Q82"/>
+                        <constraint firstItem="u8Y-Pk-iVV" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="i5a-Ew-kUm"/>
+                        <constraint firstItem="UIp-TO-lEK" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="m3T-0h-kBz"/>
+                        <constraint firstAttribute="trailing" secondItem="9bq-Qq-Au8" secondAttribute="trailing" id="nYI-5y-VSd"/>
+                        <constraint firstItem="UDb-We-YOW" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="neC-x7-VYc"/>
+                        <constraint firstAttribute="trailing" secondItem="bb2-tg-I9W" secondAttribute="trailing" id="ore-o4-im4"/>
+                        <constraint firstItem="9bq-Qq-Au8" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.1" id="owx-Q5-Sjo"/>
+                        <constraint firstItem="u8Y-Pk-iVV" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="q7f-J7-kvR"/>
+                        <constraint firstItem="aBL-Ho-8IF" firstAttribute="top" secondItem="s6W-KT-Dfk" secondAttribute="bottom" id="qhj-iy-VfQ"/>
+                        <constraint firstItem="EPv-fT-bml" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="tMe-9u-W0A"/>
+                        <constraint firstItem="s6W-KT-Dfk" firstAttribute="top" secondItem="BX1-zJ-uit" secondAttribute="top" id="u4h-co-PoE"/>
+                        <constraint firstAttribute="trailing" secondItem="s6W-KT-Dfk" secondAttribute="trailing" id="w5d-He-uMd"/>
+                        <constraint firstItem="aBL-Ho-8IF" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="yd8-hh-Mlg"/>
+                    </constraints>
                 </view>
-                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBL-Ho-8IF" userLabel="rowUpper" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="150" width="600" height="150"/>
-                    <animations/>
-                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
-                </view>
-                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIp-TO-lEK" userLabel="rowLower" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="300" width="600" height="150"/>
-                    <animations/>
-                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.49920604670000002" colorSpace="calibratedRGB"/>
-                </view>
-                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-tg-I9W" userLabel="rowBottom" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvy-3r-Plf" userLabel="rowControls" customClass="ViewContainer" customModule="Keyboard" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="450" width="600" height="150"/>
                     <animations/>
-                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.50200076220000001" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
             <animations/>
-            <color key="backgroundColor" red="0.180392161" green="0.78039217000000005" blue="0.72941178080000002" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="s6W-KT-Dfk" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="FlE-4c-phG"/>
-                <constraint firstItem="aBL-Ho-8IF" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="Nx1-YM-chl"/>
-                <constraint firstAttribute="bottom" secondItem="bb2-tg-I9W" secondAttribute="bottom" id="TDk-uX-GnO"/>
-                <constraint firstItem="UIp-TO-lEK" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="TMZ-O5-IFW"/>
-                <constraint firstItem="bb2-tg-I9W" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="V57-br-jiW"/>
-                <constraint firstItem="s6W-KT-Dfk" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="Wdi-7e-btO"/>
-                <constraint firstItem="bb2-tg-I9W" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="XQc-GS-NNt"/>
-                <constraint firstItem="bb2-tg-I9W" firstAttribute="top" secondItem="UIp-TO-lEK" secondAttribute="bottom" id="aul-Yd-txA"/>
-                <constraint firstAttribute="trailing" secondItem="UIp-TO-lEK" secondAttribute="trailing" id="eDD-OM-6aR"/>
-                <constraint firstAttribute="trailing" secondItem="aBL-Ho-8IF" secondAttribute="trailing" id="eel-90-e8p"/>
-                <constraint firstItem="UIp-TO-lEK" firstAttribute="top" secondItem="aBL-Ho-8IF" secondAttribute="bottom" id="gnK-5h-Q82"/>
-                <constraint firstItem="UIp-TO-lEK" firstAttribute="height" secondItem="BX1-zJ-uit" secondAttribute="height" multiplier="0.25" id="m3T-0h-kBz"/>
-                <constraint firstAttribute="trailing" secondItem="bb2-tg-I9W" secondAttribute="trailing" id="ore-o4-im4"/>
-                <constraint firstItem="aBL-Ho-8IF" firstAttribute="top" secondItem="s6W-KT-Dfk" secondAttribute="bottom" id="qhj-iy-VfQ"/>
-                <constraint firstItem="s6W-KT-Dfk" firstAttribute="top" secondItem="BX1-zJ-uit" secondAttribute="top" id="u4h-co-PoE"/>
-                <constraint firstAttribute="trailing" secondItem="s6W-KT-Dfk" secondAttribute="trailing" id="w5d-He-uMd"/>
-                <constraint firstItem="aBL-Ho-8IF" firstAttribute="leading" secondItem="BX1-zJ-uit" secondAttribute="leading" id="yd8-hh-Mlg"/>
+                <constraint firstAttribute="trailing" secondItem="uvy-3r-Plf" secondAttribute="trailing" id="1Lm-er-ua2"/>
+                <constraint firstAttribute="trailing" secondItem="BX1-zJ-uit" secondAttribute="trailing" id="N2B-b5-ohb"/>
+                <constraint firstItem="uvy-3r-Plf" firstAttribute="leading" secondItem="ofg-aG-W1H" secondAttribute="leading" id="OCO-c4-0KK"/>
+                <constraint firstItem="BX1-zJ-uit" firstAttribute="leading" secondItem="ofg-aG-W1H" secondAttribute="leading" id="ZeG-o2-fP4"/>
+                <constraint firstItem="BX1-zJ-uit" firstAttribute="height" secondItem="ofg-aG-W1H" secondAttribute="height" multiplier="2.5" id="fuo-va-aY6"/>
+                <constraint firstAttribute="bottom" secondItem="uvy-3r-Plf" secondAttribute="bottom" id="gCW-n1-dPx"/>
+                <constraint firstItem="uvy-3r-Plf" firstAttribute="height" secondItem="ofg-aG-W1H" secondAttribute="height" multiplier="0.25" id="jnw-5t-Vp8"/>
+                <constraint firstAttribute="bottom" secondItem="BX1-zJ-uit" secondAttribute="bottom" id="kFV-a2-X92"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
-                <outlet property="rowBottom" destination="bb2-tg-I9W" id="JxE-jh-6PI"/>
-                <outlet property="rowLower" destination="UIp-TO-lEK" id="esC-G6-jR3"/>
-                <outlet property="rowTop" destination="s6W-KT-Dfk" id="4b8-A5-PhZ"/>
-                <outlet property="rowUpper" destination="aBL-Ho-8IF" id="Gqm-H0-pOS"/>
+                <outlet property="row0" destination="UDb-We-YOW" id="Ht4-Wc-xkB"/>
+                <outlet property="row1" destination="kj8-DP-JIk" id="FJN-pz-YY5"/>
+                <outlet property="row3" destination="EPv-fT-bml" id="sgn-pq-aSu"/>
+                <outlet property="row4" destination="u8Y-Pk-iVV" id="vun-xQ-vnv"/>
+                <outlet property="row5" destination="bb2-tg-I9W" id="Teb-bM-XPH"/>
+                <outlet property="row6" destination="UIp-TO-lEK" id="nKf-tI-Opd"/>
+                <outlet property="row7" destination="aBL-Ho-8IF" id="yIW-zX-b6o"/>
+                <outlet property="row8" destination="s6W-KT-Dfk" id="5jn-0Y-rgz"/>
+                <outlet property="rowControls" destination="uvy-3r-Plf" id="Jbs-Mx-Nyj"/>
             </connections>
+            <point key="canvasLocation" x="278" y="-254"/>
         </view>
     </objects>
 </document>

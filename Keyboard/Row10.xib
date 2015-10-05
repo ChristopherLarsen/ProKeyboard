@@ -111,18 +111,6 @@
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outletCollection property="arrayKeyContainers" destination="cXc-6z-hex" collectionClass="NSMutableArray" id="C0m-bT-vVK"/>
-                <outletCollection property="arrayKeyContainers" destination="qYn-6E-ifT" collectionClass="NSMutableArray" id="hQM-f6-xNy"/>
-                <outletCollection property="arrayKeyContainers" destination="dDg-jE-7zA" collectionClass="NSMutableArray" id="RkH-ip-mrG"/>
-                <outletCollection property="arrayKeyContainers" destination="IJV-Wz-Wjk" collectionClass="NSMutableArray" id="ve1-RS-NZ3"/>
-                <outletCollection property="arrayKeyContainers" destination="L1Z-25-2BA" collectionClass="NSMutableArray" id="jAV-G8-IDm"/>
-                <outletCollection property="arrayKeyContainers" destination="Gkz-I6-I1u" collectionClass="NSMutableArray" id="rle-Yu-OpT"/>
-                <outletCollection property="arrayKeyContainers" destination="RRf-Uy-46g" collectionClass="NSMutableArray" id="zhk-ai-7VN"/>
-                <outletCollection property="arrayKeyContainers" destination="Ucb-Nx-FUa" collectionClass="NSMutableArray" id="9Mf-Vx-ikq"/>
-                <outletCollection property="arrayKeyContainers" destination="vsU-RI-Vn2" collectionClass="NSMutableArray" id="KlC-2B-bb9"/>
-                <outletCollection property="arrayKeyContainers" destination="GPk-En-jm6" collectionClass="NSMutableArray" id="hhJ-LH-Znw"/>
-            </connections>
             <point key="canvasLocation" x="319" y="380"/>
         </view>
     </objects>
