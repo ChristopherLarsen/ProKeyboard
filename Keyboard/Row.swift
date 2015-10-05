@@ -9,8 +9,10 @@
 import UIKit
 
 
-class Row : UIView
+public class Row : UIView
 {
+    public var keyboardDelegate: KeyboardDelegate? = nil
+
     var arrayKeyContainers: [ViewContainer] = []
 
     class func rowControls() -> Row {
@@ -31,7 +33,7 @@ class Row : UIView
         return row
     }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         for subview in self.subviews {

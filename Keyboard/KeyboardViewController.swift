@@ -8,19 +8,24 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController {
+public enum Command {
+    case CommandShift
+    case CommandNextKeyboard
+    case CommandSpace
+}
+
+public protocol KeyboardDelegate {
+    func actionSelectCommand(command: Command)
+    func actionSelectKey(key: String)
+}
+
+class KeyboardViewController: UIInputViewController, KeyboardDelegate {
     
     @IBOutlet var nextKeyboardButton: UIButton!
     
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         self.loadKeyboard()
         self.addNextKeyboardKey()
     }
@@ -31,6 +36,7 @@ class KeyboardViewController: UIInputViewController {
         
         if let keyboard = load as? Keyboard {
             
+            keyboard.keyboardDelegate = self
             keyboard.frame = self.view.frame
             self.view.addSubview(keyboard)
             self.view.constrainChildViewTopLeftBottomRight(keyboard)
@@ -39,7 +45,7 @@ class KeyboardViewController: UIInputViewController {
             keyboard.loadRows()
             
         }
-                
+        
     }
     
     func addNextKeyboardKey() {
@@ -75,5 +81,29 @@ class KeyboardViewController: UIInputViewController {
         
         self.nextKeyboardButton?.setTitleColor(textColor, forState: .Normal)
     }
+    
+    func shift() {
+        
+    }
+    
+    // mark - KeyboardDelegate
+    
+    func actionSelectCommand(command: Command)
+    {
+        switch (command)
+        {
+        case .CommandShift:
+            self.shift()
+        case .CommandSpace:
+            self.textDocumentProxy.insertText(" ")
+        case .CommandNextKeyboard:
+            self.advanceToNextInputMode()
+        }
+    }
+    
+    func actionSelectKey(key: String)
+    {
+        self.textDocumentProxy.insertText(key)
+    }    
     
 }

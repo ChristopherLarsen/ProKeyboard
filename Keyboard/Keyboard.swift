@@ -21,9 +21,11 @@ public class Keyboard : UIView
     @IBOutlet var container7 : ViewContainer!
     @IBOutlet var container8 : ViewContainer!
     
+    public var keyboardDelegate: KeyboardDelegate? = nil
+    
     var shiftStatus = ShiftStatus.ShiftStatusOn
     
-    public func loadRows()
+    func loadRows()
     {
         let rowControls = Row.rowControls()
         self.containerControls.addSubview(rowControls)
@@ -44,7 +46,8 @@ public class Keyboard : UIView
         rowLetters0.backgroundColor = UIColor.greenColor()
     }
     
-    func loadRow(container: ViewContainer, row: Row, characters: Array<String>) {
+    private func loadRow(container: ViewContainer, row: Row, characters: Array<String>)
+    {
         row.frame = container.bounds
         let arrayKeys = Key.keysForLetters(characters)
         row.populateWithArrayOfKeys(arrayKeys)
